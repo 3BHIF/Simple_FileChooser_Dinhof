@@ -5,6 +5,7 @@ private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {
   int var = fc.showSaveDialog(this);
   if (var == JFileChooser.APPROVE_OPTION) {
     File file = fc.getSelectedFile();
+    file.createNewFile();
   }
 }                                          
 
